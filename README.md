@@ -26,7 +26,7 @@ iCloudFix mitigates the issue, by closing the iCloud UI (Only keep iCloud servic
 
 - **Task Scheduler Integration**: Configured to run indefinitely during idle conditions and restart if idle state resumes.
 
-- **Logging**: Maintains a log file at  %APPDATA%\iCloudFix\iCloudFix.log  (capped at 50KB) for debugging.
+- **Logging**: Maintains a log file at  %APPDATA%\iCloudFix\iCloudFix.log  (capped at 20KB) for debugging.
 
 - **Customizable Settings**: Easily adjust Task Scheduler parameters (e.g., idle duration, execution time) via the XML configuration.
 
