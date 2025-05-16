@@ -55,7 +55,7 @@ Follow these steps to install and configure iCloudFix:
    - The task will then automatically run when the system is idle for 1 minute.
 
 ### Uninstall
-Uninstall by removing the Scheduled Task in Taskschedular and your Task Schedular folder.
+Uninstall by removing the scheduled task *"iCloudFix"* in Taskschedular and your Task Schedular folder *%APPDATA%\iCloudFix*.
 
 
 ## Configuration
