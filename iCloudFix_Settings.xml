@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">  
+  <Triggers>
+    <IdleTrigger>
+      <Enabled>true</Enabled>
+    </IdleTrigger>
+  </Triggers>
+  <RegistrationInfo>    
+    <Description>Auto fix iCloud high CPU usage issue when idle. Log file is located at %APPDATA%\iCloudFix\iCloudFix.log.</Description>
+    <Author>Zenqlo</Author>
+  </RegistrationInfo>
+  <Principals>
+    <Principal id="Author">
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <IdleSettings>
+      <Duration>PT1M</Duration>
+      <WaitTimeout>PT0S</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <MultipleInstancesPolicy>StopExisting</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <RunOnlyIfIdle>true</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT60S</ExecutionTimeLimit>
+    <Priority>10</Priority>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>wscript.exe</Command>
+      <Arguments>"%APPDATA%\iCloudFix\Launch.vbs"</Arguments>
+    </Exec>
+  </Actions>
+</Task>
