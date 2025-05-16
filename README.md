@@ -54,6 +54,9 @@ Follow these steps to install and configure iCloudFix:
    - Upon completion, the script will display **"Task scheduler setup complete."**
    - The task will then automatically run when the system is idle for 1 minute.
 
+### Uninstall
+Uninstall by removing the Scheduled Task in Taskschedular and your Task Schedular folder.
+
 
 ## Configuration
 
