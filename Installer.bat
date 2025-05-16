@@ -1,9 +1,10 @@
+@ECHO off
 REM Author: Zenqlo
 REM Version: v0.0.2
 REM Date: 2025-05-16
 REM Description: This script installs the iCloudFix task scheduler.
 
-@ECHO off
+
 REM Create task scheduler folder
 echo.
 
