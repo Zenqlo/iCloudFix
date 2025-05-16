@@ -2,6 +2,8 @@
 
 **iCloudFix** Fix the issue of iCloud Windows App having high CPU consumption during idling/display off. By leveraging Task Scheduler, iCloudFix closes the iCloud UI during system idle periods, reducing CPU load while preserving core iCloud functionality.
 
+A template version of this to fix other programs with similar issue is available, can be found in https://github.com/Zenqlo/idleFix. 
+
 ## Table of Contents
 - [Background](#background)
 - [Features](#features)
